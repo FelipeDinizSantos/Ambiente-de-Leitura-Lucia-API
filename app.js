@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use('/books', booksRouter);
 
-app.listen(process.env.PORT ? process.env.PORT : 3000, ()=>
+app.listen(process.env.PORT ? process.env.PORT : 3010, ()=>
 {
     console.log('Servidor iniciado!');
 });
