@@ -6,7 +6,7 @@ router.get('/findBook', async(req, res)=>
 {
     try 
     {
-        const query = req.query.search.toString();
+        const query = req.query.search ? req.query.search.toString() : '';
         const books = await getBooks(query);
         res.status(200).json({books: books});
     } 

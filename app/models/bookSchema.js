@@ -12,18 +12,7 @@ class BookSchema
         this.pageCount = pageCount;
         this.category = category;
         this.ageRange = ageRange;
-
-        switch(isRented)
-        {
-            case 0: 
-                this.isRented = false;
-                break;
-            case 1:
-                this.isRented = true;
-                break;
-            default: 
-                this.isRented = false;
-        }
+        this.isRented = isRented;
     }
 }
 
