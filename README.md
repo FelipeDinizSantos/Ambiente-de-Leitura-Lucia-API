@@ -12,7 +12,7 @@ Esta API tem como objetivo conectar a [aplicação web](https://github.com/Felip
 ## Funcionalidades Principais
 
 ### Querys
-- Realiza consultas consistentes no banco de dados e retorna os valores tratados em um arquivo JSON para a aplicação que realizou a requisição.
+- Realiza consultas consistentes no banco de dados e retorna os valores tratados em um JSON para a aplicação que realizou a requisição.
 
 ## Como Contribuir
 
