@@ -41,6 +41,7 @@ const connection = mysql.createPool(
 module.exports = connection;
 ```
 Aqui preencha com as informações de acesso do seu banco de dados MySQL. Note que caso não utilize senha, em password, deixe uma string vazia. 
+
 4. Execute a API
 ```bash
 npm start
