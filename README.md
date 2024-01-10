@@ -14,6 +14,25 @@ Esta API tem como objetivo conectar a [aplicação web](https://github.com/Felip
 ### Querys
 - Realiza consultas consistentes no banco de dados e retorna os valores tratados em um JSON para a aplicação que realizou a requisição.
 
+## Instalação 
+1 Clone este repositório
+2 Dentro da raiz do projeto crie uma pasta `config` e dentro dela crie o arquivo `connection.js`. Dentro deste arquivo JS cole o seguinte comando:
+```bash
+const mysql = require('mysql2/promise');
+const fs = require('fs');
+
+const connection = mysql.createPool(
+    {
+        host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: 'c662943d78',
+        database: 'db_biblioteca'
+    })
+
+module.exports = connection;
+```
+
 ## Como Contribuir
 
 1. Faça um fork do repositório.
